@@ -134,7 +134,8 @@ About – Story and stylist team.
 Contact – Contact form and location map.
 
 
-![Uploading image.png…]()
+<img width="495" height="852" alt="image" src="https://github.com/user-attachments/assets/d2952c30-9a4b-4aec-b212-9bb422a58579" />
+
 
 
 
