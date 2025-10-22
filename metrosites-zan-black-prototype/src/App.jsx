@@ -1,11 +1,12 @@
 import './App.css'
 import React from 'react'
-function App() {
 
+function App() {
 
   return (
     <>
-      <p>Hello </p>
+     <p className="text-blue-500">Hello</p>
+
     </>
   )
 }
