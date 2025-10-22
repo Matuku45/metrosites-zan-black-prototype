@@ -1,24 +1,23 @@
-// src/pages/Portfolio.jsx
 import React from "react";
 import { motion } from "framer-motion";
 import PortfolioCard from "../components/PortfolioCard";
+import { Sparkles, Scissors, Camera } from "lucide-react";
 
-// Example portfolio data
 const portfolioData = [
   {
     title: "Wedding Glam",
-    image: "/images/portfolio/wedding1.jpg",
     description: "Elegant bridal styling for your dream wedding.",
+    icon: Sparkles,
   },
   {
     title: "Matric Dance Look",
-    image: "/images/portfolio/matric1.jpg",
     description: "Stunning looks for your special matric dance night.",
+    icon: Scissors,
   },
   {
     title: "Event Styling",
-    image: "/images/portfolio/event1.jpg",
     description: "Professional styling for all events and parties.",
+    icon: Camera,
   },
 ];
 
@@ -56,8 +55,8 @@ export default function Portfolio() {
           <PortfolioCard
             key={index}
             title={item.title}
-            image={item.image}
             description={item.description}
+            IconComponent={item.icon}
           />
         ))}
       </motion.div>
