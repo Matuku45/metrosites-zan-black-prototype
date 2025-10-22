@@ -1,14 +1,16 @@
-// src/App.jsx
 import React from "react";
-import { Routes, Route } from "react-router-dom"; // ✅ BrowserRouter should wrap App in main.jsx
+import { Routes, Route } from "react-router-dom"; // BrowserRouter wraps App in main.jsx
 import { motion, AnimatePresence } from "framer-motion";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import Booking from "./pages/Booking"; // ✅ import Booking page
+import Booking from "./pages/Booking";
+import Services from "./pages/Services";     // ✅ import Services page
+import Portfolio from "./pages/Portfolio";   // ✅ import Portfolio page
 
 export default function App() {
   return (
@@ -29,6 +31,36 @@ export default function App() {
                   transition={{ duration: 0.5 }}
                 >
                   <Home />
+                </motion.div>
+              }
+            />
+
+            {/* Services Route */}
+            <Route
+              path="/services"
+              element={
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -10 }}
+                  transition={{ duration: 0.5 }}
+                >
+                  <Services />
+                </motion.div>
+              }
+            />
+
+            {/* Portfolio Route */}
+            <Route
+              path="/portfolio"
+              element={
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -10 }}
+                  transition={{ duration: 0.5 }}
+                >
+                  <Portfolio />
                 </motion.div>
               }
             />
