@@ -38,7 +38,7 @@ export default function Contact() {
           <Mail size={50} className="text-pink-400 mx-auto mb-4" />
           <h2 className="text-xl font-semibold mb-2">Email Us</h2>
           <p className="text-gray-600">info@zanblack.com</p>
-          <button className="btn btn-pink mt-4 bg-gradient-to-r from-pink-400 to-purple-500 text-white border-none hover:scale-105 transition-transform">
+          <button className="btn mt-4 bg-gradient-to-r from-pink-400 to-purple-500 text-white border-none hover:scale-105 transition-transform">
             Send Email
           </button>
         </div>
@@ -48,7 +48,7 @@ export default function Contact() {
           <Phone size={50} className="text-pink-400 mx-auto mb-4" />
           <h2 className="text-xl font-semibold mb-2">Call Us</h2>
           <p className="text-gray-600">+27 123 456 7890</p>
-          <button className="btn btn-pink mt-4 bg-gradient-to-r from-pink-400 to-purple-500 text-white border-none hover:scale-105 transition-transform">
+          <button className="btn mt-4 bg-gradient-to-r from-pink-400 to-purple-500 text-white border-none hover:scale-105 transition-transform">
             Call Now
           </button>
         </div>
@@ -58,7 +58,7 @@ export default function Contact() {
           <MapPin size={50} className="text-pink-400 mx-auto mb-4" />
           <h2 className="text-xl font-semibold mb-2">Visit Us</h2>
           <p className="text-gray-600">123 Glam Street, Johannesburg</p>
-          <button className="btn btn-pink mt-4 bg-gradient-to-r from-pink-400 to-purple-500 text-white border-none hover:scale-105 transition-transform">
+          <button className="btn mt-4 bg-gradient-to-r from-pink-400 to-purple-500 text-white border-none hover:scale-105 transition-transform">
             Get Directions
           </button>
         </div>
@@ -72,21 +72,21 @@ export default function Contact() {
         className="mt-16 w-full max-w-3xl"
       >
         <h2 className="text-2xl font-bold text-center mb-6 text-pink-500">Send us a message</h2>
-        <form className="bg-white shadow-lg p-8 rounded-lg flex flex-col gap-4">
+        <form className="bg-white shadow-lg p-8 rounded-xl flex flex-col gap-6">
           <input
             type="text"
             placeholder="Your Name"
-            className="input input-bordered w-full"
+            className="input input-bordered w-full text-gray-800 placeholder-gray-400 focus:border-pink-400 focus:ring focus:ring-pink-200"
           />
           <input
             type="email"
             placeholder="Your Email"
-            className="input input-bordered w-full"
+            className="input input-bordered w-full text-gray-800 placeholder-gray-400 focus:border-pink-400 focus:ring focus:ring-pink-200"
           />
           <textarea
             placeholder="Your Message"
-            className="textarea textarea-bordered w-full"
-            rows={4}
+            className="textarea textarea-bordered w-full text-gray-800 placeholder-gray-400 focus:border-pink-400 focus:ring focus:ring-pink-200"
+            rows={5}
           ></textarea>
           <button
             type="submit"
