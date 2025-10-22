@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import { Sparkles, Scissors, CalendarDays, Camera } from "lucide-react";
 import { Button } from "daisyui";
-
+import React from "react";
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-500 via-black to-amber-400 text-white flex flex-col items-center justify-center px-6 py-12">
