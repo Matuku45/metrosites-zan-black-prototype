@@ -23,15 +23,16 @@ const portfolioData = [
 
 export default function Portfolio() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-pink-100 via-purple-100 to-pink-200 px-6 py-12">
-      {/* Page Header */}
+    <div className="min-h-screen bg-gradient-to-br from-pink-100 via-purple-100 to-pink-200 flex flex-col items-center px-6 py-16">
+      
+      {/* Header */}
       <motion.h1
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="text-4xl md:text-6xl font-bold text-center mb-8 text-pink-500"
+        className="text-4xl md:text-6xl font-bold text-center mb-6 text-pink-600"
       >
-        🎨 Portfolio
+        🎨 Our Portfolio
       </motion.h1>
 
       {/* Subtitle */}
@@ -39,17 +40,17 @@ export default function Portfolio() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.3, duration: 1 }}
-        className="text-center text-gray-700 mb-12 max-w-2xl mx-auto"
+        className="text-center text-gray-700 mb-12 max-w-2xl leading-relaxed"
       >
-        Browse through our gallery of past weddings, matric dances, and events styled by Zan Black.
+        Browse through our gallery of past weddings, matric dances, and events styled by <span className="font-semibold text-pink-500">Zan Black</span>. Each look tells a story of elegance and sophistication.
       </motion.p>
 
       {/* Portfolio Grid */}
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+        initial={{ opacity: 0, scale: 0.95 }}
+        animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 0.6, duration: 0.8 }}
-        className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto"
+        className="grid grid-cols-1 md:grid-cols-3 gap-10 w-full max-w-6xl"
       >
         {portfolioData.map((item, index) => (
           <PortfolioCard
