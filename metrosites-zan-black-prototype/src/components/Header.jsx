@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Menu, X, Phone, Instagram, Facebook, Sparkles } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import React from "react";
+
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -25,7 +26,7 @@ export default function Header() {
         {/* 🌸 Brand Section */}
         <div className="flex items-center gap-3">
           <Sparkles className="text-pink-400 animate-pulse" size={28} />
-          <span className="text-2xl font-bold tracking-widest text-pink-400">
+          <span className="text-2xl font-bold tracking-widest text-black bg-white px-2 py-1 rounded-lg shadow-md">
             Zan Black
           </span>
           <span className="hidden sm:block text-sm italic text-gray-300">
@@ -50,13 +51,26 @@ export default function Header() {
 
         {/* ☎️ Social Icons (Desktop) */}
         <div className="hidden md:flex items-center space-x-5">
-          <a href="tel:+27712345678" className="hover:text-pink-400 flex items-center gap-1">
+          <a
+            href="tel:+27712345678"
+            className="hover:text-pink-400 flex items-center gap-1"
+          >
             <Phone size={18} /> <span>Call</span>
           </a>
-          <a href="https://instagram.com" target="_blank" rel="noreferrer" className="hover:text-pink-400">
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-pink-400"
+          >
             <Instagram size={20} />
           </a>
-          <a href="https://facebook.com" target="_blank" rel="noreferrer" className="hover:text-pink-400">
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-pink-400"
+          >
             <Facebook size={20} />
           </a>
         </div>
@@ -93,15 +107,32 @@ export default function Header() {
 
               {/* 🌸 Mobile Socials */}
               <div className="pt-4 border-t border-gray-700 flex space-x-4">
-                <a href="tel:+27712345678" className="flex items-center gap-2 text-gray-300 hover:text-pink-400">
+                <a
+                  href="tel:+27712345678"
+                  className="flex items-center gap-2 text-gray-300 hover:text-pink-400"
+                >
                   <Phone size={18} />
                   <span>Call</span>
                 </a>
-                <a href="https://instagram.com" target="_blank" rel="noreferrer">
-                  <Instagram className="text-gray-300 hover:text-pink-400" size={20} />
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Instagram
+                    className="text-gray-300 hover:text-pink-400"
+                    size={20}
+                  />
                 </a>
-                <a href="https://facebook.com" target="_blank" rel="noreferrer">
-                  <Facebook className="text-gray-300 hover:text-pink-400" size={20} />
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Facebook
+                    className="text-gray-300 hover:text-pink-400"
+                    size={20}
+                  />
                 </a>
               </div>
             </nav>
