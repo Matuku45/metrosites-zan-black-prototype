@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Heart, Star, Users, Scissors, Sparkles } from "lucide-react";
 
+
 export default function About() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-pink-50 via-rose-100 to-purple-50 flex flex-col items-center justify-center px-6 py-16 text-gray-800">
